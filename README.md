@@ -23,3 +23,6 @@ The ABS/Wheel Speed Sensor Simulator does not use a digital signal to make the c
 
 ## Fuel and Engine Temperature gauge
 These are just potentiometers across the lines on the respective wiring in the vehicle loom.
+
+## SMEG IV2+ CAN simulator
+The SMEG IV2+ CAN simulator was created to be able to operate the IVI without the rest of the vehicle being present. It uses a [Nano-can](https://github.com/mintynet/nano-can) and the sketch in the IVI-CAN-Sim folder has details of the wiring required on the IVI.
