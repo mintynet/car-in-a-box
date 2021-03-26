@@ -7,16 +7,16 @@ The original ardustim software comes from [Speeduino Ardustim project](https://g
 The PCB allows for either surface mount or through hole 2N3904 transistors and 1k base resistors. The 1st channel can also use a TIP120 transistor to allow for use with bigger load devices. An Arduino Nano is used with a potentiometer (0v,Signal,5v) which is connected to analog 0 input to allow the changing of the RPMs of the engine.
 The inputs to the board connect to pins 8, 9 & 10 on the Nano. The outputs are connected to the Crank and two Cam sensor inputs on the Engine ECU. A common ground is also required between the MCU and the ECU.
 <br>
-![Ardustim Schematic](/Hardware/ardustim-sch.png)
-![Ardustim PCB](/Hardware/ardustim.jpg)
+<br> Ardustim Schematic<br>![Ardustim Schematic](/Hardware/ardustim-sch.png)
+<br>Ardustim PCB<br>![Ardustim PCB](/Hardware/ardustim.jpg)
 
 ## O2 Sensor simulator
 The O2 sensor simulator uses a 556 timer which is a dual 555 timer, the circuit used is shown below. Two sensors are required because one is pre and one is post the catalitic convertor. There is also a requirement for the heater circuit to be simulated by using a 50W 8ohm wirewound resistor connected across where the heater circuit would be connected.
 <br>
-![O2 Sim Schematic](/Hardware/O2Sim-sch.jpg)
-![O2 Sim Front](/Hardware/O2Sim-front.jpg)
-![O2 Sim Rear](/Hardware/O2Sim-rear.jpg)
-![O2 Sim Scope](/Hardware/O2Sim-scope.jpg)
+<br>O2 Sim schematic<br>![O2 Sim Schematic](/Hardware/O2Sim-sch.jpg)
+<br>O2 Sim Front<br>![O2 Sim Front](/Hardware/O2Sim-front.jpg)
+<br>O2 Sim Rear<br>![O2 Sim Rear](/Hardware/O2Sim-rear.jpg)
+<br>O2 Sim Scope not connected to ECU<br>![O2 Sim Scope](/Hardware/O2Sim-scope.jpg)
 <br>[Original O2 simulator circuit](https://www.chippernut.com/blog/o2-simulator#/)
 
 ## ABS Sensor Simulator
