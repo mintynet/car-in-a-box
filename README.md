@@ -17,7 +17,7 @@ The O2 sensor simulator uses a 556 timer which is a dual 555 timer, the circuit 
 ![O2 Sim Front](/Hardware/O2Sim-front.jpg)
 ![O2 Sim Rear](/Hardware/O2Sim-rear.jpg)
 ![O2 Sim Scope](/Hardware/O2Sim-scope.jpg)
-[Original O2 simulator circuit](https://www.chippernut.com/blog/o2-simulator#/)
+<br>[Original O2 simulator circuit](https://www.chippernut.com/blog/o2-simulator#/)
 
 ## ABS Sensor Simulator
 The ABS/Wheel Speed Sensor Simulator does not use a digital signal to make the car think that the wheels are turning. It uses a [Nano-can](https://github.com/mintynet/nano-can) with an addition 20x4 LCD, a potentiometer to control the required speed of the PWM controlled motor, this is driven using an ardustim PCB but using the TIP120 transistor to allow for the greater current of the motor. The CAN bus is connected to the cluster LS CAN BUS (125kbps) to allow the simulator to read the speed from the vehicle. The sketch is in the ABS-Sim folder.
