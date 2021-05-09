@@ -358,6 +358,7 @@ static void disp4digits(long iOut, int XPOS, int YPOS) {
 void setup() {
   pinMode(abs_pwm_pin, OUTPUT);
   Serial.begin(9600);
+  Serial.println("Setup for 9V motor supply:");
   if(CAN0.begin(MCP_ANY, CAN_125KBPS, MCP_8MHZ) == CAN_OK)
     Serial.println("MCP2515 Initialized Successfully!");
   else
@@ -393,94 +394,247 @@ void loop() {
   kph_req = map(abs_pot_value,0,1023,0,23808);
   mph_req = kph_req/100/1.6;
   switch (mph_req) {
-    case 0 ... 10:
-      abs_pwm_value = 10;
+    case 0 ... 14:
+      abs_pwm_value = 58;
       break;
-    case 11 ... 20:
-      abs_pwm_value = 20;
+    case 15 ... 17:
+      abs_pwm_value = 59;
       break;
-    case 21 ... 30:
-      abs_pwm_value = 30;
-      break;
-    case 31 ... 40:
-      abs_pwm_value = 40;
-      break;
-    case 41 ... 50:
-      abs_pwm_value = 50;
-      break;
-    case 51 ... 60:
+    case 18 ... 19:
       abs_pwm_value = 60;
       break;
-    case 61 ... 68:
+    case 20 ... 22:
+      abs_pwm_value = 61;
+      break;
+    case 23 ... 25:
+      abs_pwm_value = 62;
+      break;
+    case 26 ... 27:
+      abs_pwm_value = 63;
+      break;
+    case 28 ... 29:
+      abs_pwm_value = 64;
+      break;
+    case 30 ... 31:
+      abs_pwm_value = 65;
+      break;
+    case 32 ... 33:
+      abs_pwm_value = 66;
+      break;
+    case 34 ... 35:
+      abs_pwm_value = 67;
+      break;
+    case 36 ... 38:
+      abs_pwm_value = 68;
+      break;
+    case 39 ... 40:
+      abs_pwm_value = 69;
+      break;
+    case 41 ... 42:
       abs_pwm_value = 70;
       break;
-    case 69 ... 74:
+    case 43 ... 44:
       abs_pwm_value = 71;
       break;
-    case 75 ... 76:
+    case 45 ... 47:
+      abs_pwm_value = 72;
+      break;
+    case 48 ... 49:
       abs_pwm_value = 73;
       break;
-    case 77 ... 79:
+    case 50 ... 51:
       abs_pwm_value = 74;
       break;
-    case 80 ... 82:
+    case 52 ... 53:
       abs_pwm_value = 75;
       break;
-    case 83 ... 86:
+    case 54 ... 55:
       abs_pwm_value = 76;
       break;
-    case 87 ... 90:
+    case 56 ... 57:
       abs_pwm_value = 77;
       break;
-    case 91 ... 94:
+    case 58 ... 60:
       abs_pwm_value = 78;
       break;
-    case 95 ... 96:
+    case 61:
       abs_pwm_value = 79;
       break;
-    case 97 ... 99:
+    case 62:
       abs_pwm_value = 80;
       break;
-    case 100 ... 102:
+    case 63 ... 65:
       abs_pwm_value = 81;
       break;
-    case 103 ... 106:
+    case 66:
       abs_pwm_value = 82;
       break;
-    case 107 ... 108:
+    case 67:
       abs_pwm_value = 83;
       break;
-    case 109:
+    case 68 ... 69:
       abs_pwm_value = 84;
       break;
-    case 110 ... 113:
+    case 70:
       abs_pwm_value = 85;
       break;
-    case 114 ... 115:
+    case 71 ... 72:
       abs_pwm_value = 86;
       break;
-    case 116:
+    case 73:
       abs_pwm_value = 87;
       break;
-    case 117:
+    case 74 ... 75:
       abs_pwm_value = 88;
       break;
-    case 118 ... 123:
+    case 76 ... 77:
       abs_pwm_value = 89;
       break;
-    case 124 ... 125:
+    case 78:
       abs_pwm_value = 90;
       break;
-    case 126 ... 129:
+    case 79 ... 80:
       abs_pwm_value = 91;
       break;
-    case 130:
+    case 81 ... 82:
       abs_pwm_value = 92;
       break;
+    case 83 ... 84:
+      abs_pwm_value = 93;
+      break;
+    case 85:
+      abs_pwm_value = 94;
+      break;
+    case 86 ... 87:
+      abs_pwm_value = 95;
+      break;
+    case 88:
+      abs_pwm_value = 96;
+      break;
+    case 89 ... 90:
+      abs_pwm_value = 97;
+      break;
+    case 91 ... 92:
+      abs_pwm_value = 98;
+      break;
+    case 93:
+      abs_pwm_value = 99;
+      break;
+    case 94:
+      abs_pwm_value = 100;
+      break;
+    case 95:
+      abs_pwm_value = 101;
+      break;
+    case 96 ... 97:
+      abs_pwm_value = 102;
+      break;
+    case 98:
+      abs_pwm_value = 103;
+      break;
+    case 99:
+      abs_pwm_value = 104;
+      break;
+    case 100:
+      abs_pwm_value = 105;
+      break;
+    case 101 ... 102:
+      abs_pwm_value = 106;
+      break;
+    case 103:
+      abs_pwm_value = 107;
+      break;
+    case 104 ... 105:
+      abs_pwm_value = 108;
+      break;
+    case 106:
+      abs_pwm_value = 109;
+      break;
+    case 107:
+      abs_pwm_value = 110;
+      break;
+    case 108:
+      abs_pwm_value = 111;
+      break;
+    case 109:
+      abs_pwm_value = 112;
+      break;
+    case 110:
+      abs_pwm_value = 114;
+      break;
+    case 111 ... 112:
+      abs_pwm_value = 115;
+      break;
+    case 113:
+      abs_pwm_value = 116;
+      break;
+    case 114:
+      abs_pwm_value = 117;
+      break;
+    case 115:
+      abs_pwm_value = 118;
+      break;
+    case 116 ... 117 :
+      abs_pwm_value = 120;
+      break;
+    case 118:
+      abs_pwm_value = 121;
+      break;
+    case 119:
+      abs_pwm_value = 123;
+      break;
+    case 120:
+      abs_pwm_value = 126;
+      break;
+    case 121:
+      abs_pwm_value = 127;
+      break;
+    case 122:
+      abs_pwm_value = 128;
+      break;
+    case 123:
+      abs_pwm_value = 129;
+      break;
+    case 124:
+      abs_pwm_value = 130;
+      break;
+    case 125:
+      abs_pwm_value = 132;
+      break;
+    case 126:
+      abs_pwm_value = 133;
+      break;
+    case 127:
+      abs_pwm_value = 135;
+      break;
+    case 128:
+      abs_pwm_value = 136;
+      break;
+    case 129:
+      abs_pwm_value = 138;
+      break;
+    case 130:
+      abs_pwm_value = 139;
+      break;
+    case 131:
+      abs_pwm_value = 142;
+      break;
+    case 132 ... 133:
+      abs_pwm_value = 145;
+      break;
+    case 134:
+      abs_pwm_value = 148;
+      break;
+    case 135 ... 148:
+      abs_pwm_value = 165;
+      break;
   }
+
   if (abs_pot_value < 5) {
     abs_pwm_value = 0;
   }
+  //abs_pwm_value = mph_req;
+  
   analogWrite(abs_pwm_pin, abs_pwm_value);
   delay(1);
  
