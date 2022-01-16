@@ -394,239 +394,245 @@ void loop() {
   kph_req = map(abs_pot_value,0,1023,0,23808);
   mph_req = kph_req/100/1.6;
   switch (mph_req) {
-    case 0 ... 14:
-      abs_pwm_value = 58;
+    case 0 ... 24:
+      abs_pwm_value = 30;
       break;
-    case 15 ... 17:
-      abs_pwm_value = 59;
+    case 25 ... 26:
+      abs_pwm_value = 31;
       break;
-    case 18 ... 19:
-      abs_pwm_value = 60;
+    case 27 ... 28:
+      abs_pwm_value = 32;
       break;
-    case 20 ... 22:
-      abs_pwm_value = 61;
+    case 29 ... 30:
+      abs_pwm_value = 33;
       break;
-    case 23 ... 25:
-      abs_pwm_value = 62;
-      break;
-    case 26 ... 27:
-      abs_pwm_value = 63;
-      break;
-    case 28 ... 29:
-      abs_pwm_value = 64;
-      break;
-    case 30 ... 31:
-      abs_pwm_value = 65;
+    case 31:
+      abs_pwm_value = 34;
       break;
     case 32 ... 33:
-      abs_pwm_value = 66;
+      abs_pwm_value = 35;
       break;
-    case 34 ... 35:
-      abs_pwm_value = 67;
+    case 34 ... 37:
+      abs_pwm_value = 36;
       break;
-    case 36 ... 38:
-      abs_pwm_value = 68;
-      break;
-    case 39 ... 40:
-      abs_pwm_value = 69;
+    case 38 ... 40:
+      abs_pwm_value = 37;
       break;
     case 41 ... 42:
-      abs_pwm_value = 70;
+      abs_pwm_value = 38;
       break;
-    case 43 ... 44:
-      abs_pwm_value = 71;
+    case 43 ... 45:
+      abs_pwm_value = 39;
       break;
-    case 45 ... 47:
-      abs_pwm_value = 72;
+    case 46 ... 47:
+      abs_pwm_value = 40;
       break;
-    case 48 ... 49:
-      abs_pwm_value = 73;
+    case 48:
+      abs_pwm_value = 41;
       break;
-    case 50 ... 51:
-      abs_pwm_value = 74;
+    case 49 ... 51:
+      abs_pwm_value = 42;
       break;
     case 52 ... 53:
-      abs_pwm_value = 75;
+      abs_pwm_value = 43;
       break;
-    case 54 ... 55:
-      abs_pwm_value = 76;
+    case 54 ... 56:
+      abs_pwm_value = 44;
       break;
-    case 56 ... 57:
-      abs_pwm_value = 77;
+    case 57 ... 58:
+      abs_pwm_value = 45;
       break;
-    case 58 ... 60:
-      abs_pwm_value = 78;
-      break;
-    case 61:
-      abs_pwm_value = 79;
+    case 59 ... 61:
+      abs_pwm_value = 46;
       break;
     case 62:
-      abs_pwm_value = 80;
+      abs_pwm_value = 47;
       break;
     case 63 ... 65:
-      abs_pwm_value = 81;
+      abs_pwm_value = 48;
       break;
     case 66:
-      abs_pwm_value = 82;
+      abs_pwm_value = 49;
       break;
     case 67:
-      abs_pwm_value = 83;
+      abs_pwm_value = 50;
       break;
-    case 68 ... 69:
-      abs_pwm_value = 84;
-      break;
-    case 70:
-      abs_pwm_value = 85;
+    case 68 ... 70:
+      abs_pwm_value = 51;
       break;
     case 71 ... 72:
-      abs_pwm_value = 86;
+      abs_pwm_value = 52;
       break;
-    case 73:
-      abs_pwm_value = 87;
-      break;
-    case 74 ... 75:
-      abs_pwm_value = 88;
+    case 73 ... 75:
+      abs_pwm_value = 53;
       break;
     case 76 ... 77:
-      abs_pwm_value = 89;
+      abs_pwm_value = 54;
       break;
-    case 78:
-      abs_pwm_value = 90;
+    case 78 ... 79:
+      abs_pwm_value = 55;
       break;
-    case 79 ... 80:
-      abs_pwm_value = 91;
+    case 80:
+      abs_pwm_value = 56;
       break;
     case 81 ... 82:
-      abs_pwm_value = 92;
+      abs_pwm_value = 57;
       break;
-    case 83 ... 84:
-      abs_pwm_value = 93;
+    case 83:
+      abs_pwm_value = 58;
       break;
-    case 85:
-      abs_pwm_value = 94;
+    case 84:
+      abs_pwm_value = 59;
       break;
-    case 86 ... 87:
-      abs_pwm_value = 95;
+    case 85 ... 87:
+      abs_pwm_value = 60;
       break;
     case 88:
-      abs_pwm_value = 96;
+      abs_pwm_value = 61;
       break;
     case 89 ... 90:
-      abs_pwm_value = 97;
+      abs_pwm_value = 62;
       break;
-    case 91 ... 92:
-      abs_pwm_value = 98;
+    case 91:
+      abs_pwm_value = 63;
       break;
-    case 93:
-      abs_pwm_value = 99;
+    case 92 ... 93:
+      abs_pwm_value = 64;
       break;
-    case 94:
-      abs_pwm_value = 100;
+    case 94 ... 96:
+      abs_pwm_value = 65;
       break;
-    case 95:
-      abs_pwm_value = 101;
+    case 97:
+      abs_pwm_value = 66;
       break;
-    case 96 ... 97:
-      abs_pwm_value = 102;
+    case 98 ... 99:
+      abs_pwm_value = 67;
       break;
-    case 98:
-      abs_pwm_value = 103;
+    case 100 ... 101:
+      abs_pwm_value = 68;
       break;
-    case 99:
-      abs_pwm_value = 104;
-      break;
-    case 100:
-      abs_pwm_value = 105;
-      break;
-    case 101 ... 102:
-      abs_pwm_value = 106;
+    case 102:
+      abs_pwm_value = 69;
       break;
     case 103:
-      abs_pwm_value = 107;
+      abs_pwm_value = 70;
       break;
-    case 104 ... 105:
-      abs_pwm_value = 108;
+    case 104:
+      abs_pwm_value = 71;
       break;
-    case 106:
-      abs_pwm_value = 109;
+    case 105:
+      abs_pwm_value = 72;
       break;
-    case 107:
-      abs_pwm_value = 110;
+    case 106 ... 107:
+      abs_pwm_value = 73;
       break;
-    case 108:
-      abs_pwm_value = 111;
-      break;
-    case 109:
-      abs_pwm_value = 112;
+    case 108 ... 109:
+      abs_pwm_value = 74;
       break;
     case 110:
-      abs_pwm_value = 114;
+      abs_pwm_value = 75;
       break;
-    case 111 ... 112:
-      abs_pwm_value = 115;
+    case 111:
+      abs_pwm_value = 76;
+      break;
+    case 112:
+      abs_pwm_value = 77;
       break;
     case 113:
-      abs_pwm_value = 116;
+      abs_pwm_value = 78;
       break;
     case 114:
-      abs_pwm_value = 117;
+      abs_pwm_value = 79;
       break;
-    case 115:
-      abs_pwm_value = 118;
+    case 115 ... 116:
+      abs_pwm_value = 80;
       break;
-    case 116 ... 117 :
-      abs_pwm_value = 120;
+    case 117:
+      abs_pwm_value = 81;
       break;
     case 118:
-      abs_pwm_value = 121;
+      abs_pwm_value = 82;
       break;
     case 119:
-      abs_pwm_value = 123;
+      abs_pwm_value = 83;
       break;
-    case 120:
-      abs_pwm_value = 126;
-      break;
-    case 121:
-      abs_pwm_value = 127;
+    case 120 ... 121:
+      abs_pwm_value = 84;
       break;
     case 122:
-      abs_pwm_value = 128;
+      abs_pwm_value = 85;
       break;
     case 123:
-      abs_pwm_value = 129;
+      abs_pwm_value = 86;
       break;
     case 124:
-      abs_pwm_value = 130;
+      abs_pwm_value = 87;
       break;
     case 125:
-      abs_pwm_value = 132;
+      abs_pwm_value = 88;
       break;
     case 126:
-      abs_pwm_value = 133;
+      abs_pwm_value = 89;
       break;
-    case 127:
-      abs_pwm_value = 135;
+    case 127 :
+      abs_pwm_value = 90;
       break;
     case 128:
-      abs_pwm_value = 136;
+      abs_pwm_value = 91;
       break;
     case 129:
-      abs_pwm_value = 138;
+      abs_pwm_value = 92;
       break;
     case 130:
-      abs_pwm_value = 139;
+      abs_pwm_value = 95;
       break;
     case 131:
-      abs_pwm_value = 142;
+      abs_pwm_value = 96;
       break;
-    case 132 ... 133:
-      abs_pwm_value = 145;
+    case 132:
+      abs_pwm_value = 97;
+      break;
+    case 133:
+      abs_pwm_value = 99;
       break;
     case 134:
-      abs_pwm_value = 148;
+      abs_pwm_value = 100;
       break;
-    case 135 ... 148:
-      abs_pwm_value = 165;
+    case 135:
+      abs_pwm_value = 102;
+      break;
+    case 136:
+      abs_pwm_value = 103;
+      break;
+    case 137 ... 138:
+      abs_pwm_value = 104;
+      break;
+    case 139:
+      abs_pwm_value = 105;
+      break;
+    case 140:
+      abs_pwm_value = 107;
+      break;
+    case 141:
+      abs_pwm_value = 108;
+      break;
+    case 142 ... 143:
+      abs_pwm_value = 109;
+      break;
+    case 144:
+      abs_pwm_value = 110;
+      break;
+    case 145:
+      abs_pwm_value = 111;
+      break;
+    case 146:
+      abs_pwm_value = 112;
+      break;
+    case 147:
+      abs_pwm_value = 113;
+      break;
+    case 148 ... 160:
+      abs_pwm_value = 114;
       break;
   }
 
